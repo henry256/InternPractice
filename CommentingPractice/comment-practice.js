@@ -15,6 +15,14 @@ import * as sanjana from './services/product.js';
 import * as Arithmetic from './services/arithmetic.js';
 import * as mitchell from './services/caesarCipher.js';
 import * as adil from './services/splitor.js';
+import * as richard from './services/vowelSwitcher.js';
+import * as adrianna from './services/sum.js';
+import * as glory from './model/rome.js';
+import TeamMate from './model/teammate.js'; 
+import ColorConverter from './services/colorConverter'; 
+
+
+
 
 ( function() {
     Template.printInstructions();
@@ -33,9 +41,10 @@ import * as adil from './services/splitor.js';
      console.log(martin.addSpace(greeting));
 
 
+
      let secretMessage = "Slack Practice";
      console.log(henry.encode(secretMessage));
-    
+
     var word = "WORD";
     console.log(ramitha.lowercase(word));
 
@@ -43,8 +52,8 @@ import * as adil from './services/splitor.js';
 	  console.log(sum.sumOfNumber(num));
 
 
-	var num1 = 8;
-	var num2 = 9;
+	  var num1 = 8;
+	  var num2 = 9;
     console.log(sanjana.product(num1,num2));
     
 
@@ -67,8 +76,28 @@ import * as adil from './services/splitor.js';
      var MyString = "My name is Adil Merribi";
      console.log(adil.myChars(MyString));
 
+     var name = "Richard";
+     console.log(richard.randomVowels(name));
+
+
+    //utilizing template.js model for task 3 ~ Kyle Kobayashi
+     let temp = new Template("ROYBGIV","The colors of the rainbow in their respective order");
+     console.log(temp.name + ": " + temp.description);
+
+    
+    var templateObj = new Template("Martin", "First Commit")
+    console.log(templateObj.name); 
+
+    //utilizing rome.js model for task 3 ~ Luis Moran 
+    const whoIsEmperor = new glory.Emperor(true, 10); 
+    console.log(whoIsEmperor.whoIsHe());
+
+    const member = new TeamMate("Sanjana", "Yadav");
+    console.log(whoIsEmperor.whoIsHe());	  member.setTeamName("Interns");
+
+    member.hello();
+
+
 
  })();
-
-
 
