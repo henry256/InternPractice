@@ -22,6 +22,7 @@ import * as adrianna from './services/sum.js';
 import * as glory from './model/rome.js';
 import TeamMate from './model/teammate.js'; 
 import ColorConverter from './services/colorConverter'; 
+import * as tree from './model/plant.js';
 
 
 
@@ -105,6 +106,9 @@ import ColorConverter from './services/colorConverter';
 
     member.hello();
 
+    //Utilize plant.js for task 3 ~ Henry Chen
+    const oakTree1= new tree.OakTree("Herbert", 60, false, "Chestnut Oak");
+    console.log(`${oakTree1.name} is a ${oakTree1.type}`);
 
 
  })();
