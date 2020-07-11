@@ -9,6 +9,7 @@ import * as martin from './services/spaces.js';
 import { toPigLatin } from './services/piglatin.js';
 import * as luis from './services/backwardsName.js';
 import * as henry from './services/encode-decode.js';
+
 import * as ramitha from './services/lowercase.js';
 import * as sum from './services/sumOfNumber.js';
 import * as sanjana from './services/product.js';
@@ -17,7 +18,6 @@ import * as mitchell from './services/caesarCipher.js';
 import * as adil from './services/splitor.js';
 import * as adrianna from './services/sum.js';
 import * as glory from './model/rome.js';
-
 
 ( function() {
     Template.printInstructions();
